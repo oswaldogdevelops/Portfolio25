@@ -1,0 +1,56 @@
+/* src/App.css */
+
+/* Estructura base asegurando compatibilidad */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Logo animado (opcional) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animación de rotación para logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Tarjetas (solo si no usas MUI Card) */
+.card {
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto secundario */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
